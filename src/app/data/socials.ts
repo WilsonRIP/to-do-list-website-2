@@ -5,15 +5,10 @@ export interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  {
-    name: "Twitter",
-    icon: "/social-icons/twitter-x.svg",
-    url: "https://x.com/WilsonIIRIP",
-  },
   { name: "Discord", icon: "/social-icons/icons8-discord-94.png", url: "#" },
   {
     name: "YouTube",
-    icon: "/social-icons/icons8-youtube.svg",
+    icon: "/social-icons/youtube.svg",
     url: "https://www.youtube.com/@wilsonrip",
   },
   {

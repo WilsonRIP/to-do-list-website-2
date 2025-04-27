@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback } from "react";
 import ThemeToggle from "./ThemeToggle";
 import Image from "next/image";
 import { WEBSITE_NAME } from "@/lib/types";
+import { mainNavLinks } from "@/app/data/navigation";
 
 // Define types for navigation links
 interface NavLink {
@@ -29,7 +30,10 @@ const poetsen = Poetsen_One({
 });
 
 // Extract navigation links to a constant
-const NAV_LINKS: NavLink[] = [{ href: "/", label: "Home" }];
+const NAV_LINKS: NavLink[] = mainNavLinks.map((link) => ({
+  href: link.url,
+  label: link.name,
+}));
 
 // NavLink component for better reusability
 const NavLinkItem = ({
